@@ -37,7 +37,7 @@ public class AddTwoNumbers {
     ListNode out = new AddTwoNumbers().addTwoNumbers(l1, l2);
 
     while (out != null) {
-      System.out.println(out.val);
+      System.out.print(out.val);
       out = out.next;
     }
   }
@@ -58,8 +58,7 @@ public class AddTwoNumbers {
       carry = (sum / 10);
       sum = sum % 10;
 
-      ListNode node = new ListNode(sum);
-      temp.next = node;
+      temp.next = new ListNode(sum);
 
       l1 = (l1 != null ? l1.next : null);
       l2 = (l2 != null ? l2.next : null);

@@ -24,10 +24,8 @@ public class BalancedSplit {
       leftSum -= arr[i];
       rightSum += arr[i];
 
-      if (leftSum == rightSum) {
-        if (arr[i - 1] < arr[i]) {
-          return true;
-        }
+      if (leftSum == rightSum && arr[i - 1] < arr[i]) {
+        return true;
       }
     }
     return false;

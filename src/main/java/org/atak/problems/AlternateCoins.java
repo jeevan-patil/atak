@@ -22,8 +22,7 @@ public class AlternateCoins {
     b[0] = 1 - b[0];
 
     int count1 = countSwaps(A);
-    int count2 = countSwaps(b);
-    count2++;
+    int count2 = countSwaps(b) + 1;
 
     return Math.min(count1, count2);
   }

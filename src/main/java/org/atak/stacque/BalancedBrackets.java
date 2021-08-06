@@ -12,7 +12,7 @@ public class BalancedBrackets {
     System.out.println(b.isBalanced(s));
   }
 
-  boolean isBalanced(String s) {
+  boolean isBalanced(final String s) {
 
     Stack<Character> stack = new Stack<>();
     for (char c : s.toCharArray()) {

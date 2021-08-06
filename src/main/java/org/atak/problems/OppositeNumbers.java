@@ -42,20 +42,6 @@ public class OppositeNumbers {
   }
 
   public void adjust(Map<Integer, Integer> map, int num) {
-    if (map.containsKey(num)) {
-      map.put(num, map.get(num) + 1);
-    } else {
-      map.put(num, 1);
-    }
+    map.put(num, map.getOrDefault(num, 0) + 1);
   }
-
-//  int posCnt = pos.get(pnum);
-//  int negCnt = neg.get(pnum);
-//        if (posCnt == negCnt) {
-//    return pnum;
-//  } else {
-//    int big = Math.max(posCnt, negCnt);
-//    int min = Math.min(posCnt, negCnt);
-//
-//  }
 }

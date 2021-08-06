@@ -4,14 +4,14 @@ public class RotationalCipher {
 
   public static void main(String[] args) {
     final RotationalCipher app = new RotationalCipher();
-    System.out.println(app.rotationalCipher("a", 13));
+    System.out.println(app.rotationalCipher("x", 4));
   }
 
   public char rotateLetter(char original, int rf) {
     rf = (rf % 26);
     char shifted = (char) (original + rf);
 
-    if ('a' <= original && 'z' >= original && shifted > 'z') {
+    if (Character.isLowerCase(original) && shifted > 'z') {
       return (char) (original - (26 - rf));
     } else {
       if (shifted > 'Z') {
@@ -46,36 +46,6 @@ public class RotationalCipher {
     }
 
     return sb.toString();
-  }
-
-
-  public String cipher(final String word, final int shift) {
-    final int len = word.length();
-
-    final StringBuilder s = new StringBuilder();
-    for (int i = 0; i < len; i++) {
-      char original = word.charAt(i);
-      char c = (char) (original + shift);
-
-      if (Character.isLetter(original)) {
-        if (c > 'z') {
-          s.append((char) (original - (26 - shift)));
-        } else {
-          s.append((char) (original + shift));
-        }
-      } else if (Character.isDigit(word.charAt(i))) {
-        if (c > '9') {
-          s.append((char) (original - (9 - shift)));
-        } else {
-          s.append((char) (original + shift));
-        }
-      } else {
-        s.append(original);
-      }
-
-    }
-
-    return s.toString();
   }
 
 }

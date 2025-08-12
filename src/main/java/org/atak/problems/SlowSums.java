@@ -30,5 +30,4 @@ public class SlowSums {
     }
     return penalty;
   }
-
 }

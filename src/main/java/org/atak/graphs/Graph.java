@@ -46,9 +46,8 @@ public class Graph {
     return hasPathBfs(sourceNode, destNode);
   }
 
-
-  private boolean hasPathDfs(final GraphNode source, final GraphNode destination,
-      final Set<Integer> visited) {
+  private boolean hasPathDfs(
+      final GraphNode source, final GraphNode destination, final Set<Integer> visited) {
     if (visited.contains(source.getValue())) {
       return false;
     }

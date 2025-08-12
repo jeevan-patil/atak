@@ -23,5 +23,4 @@ public class SecondMaximum {
 
     return secondMax;
   }
-
 }

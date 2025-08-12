@@ -16,11 +16,9 @@ public class Partition {
     int len = arr.length;
 
     int pivot = arr[0];
-    for(int i = 0; i < len; i++) {
-      for(int j = (len - 1); j >= 0; j--) {
-        if(arr[i] > pivot) {
-
-        }
+    for (int i = 0; i < len; i++) {
+      for (int j = (len - 1); j >= 0; j--) {
+        if (arr[i] > pivot) {}
       }
     }
     return null;

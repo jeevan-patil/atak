@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * https://leetcode.com/problems/buildings-with-an-ocean-view/
- */
+/** https://leetcode.com/problems/buildings-with-an-ocean-view/ */
 public class BuildingWithOceanView {
 
   public static void main(String[] args) {

@@ -6,7 +6,7 @@ import java.util.List;
 public class Subarrays {
 
   public static void main(String[] args) {
-    int[] arr = new int[]{1, 5, 3, 3, 3};
+    int[] arr = new int[] {1, 5, 3, 3, 3};
     dynamic(arr);
     recursive(arr);
   }
@@ -45,5 +45,4 @@ public class Subarrays {
       }
     }
   }
-
 }

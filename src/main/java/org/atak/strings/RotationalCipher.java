@@ -47,5 +47,4 @@ public class RotationalCipher {
 
     return sb.toString();
   }
-
 }

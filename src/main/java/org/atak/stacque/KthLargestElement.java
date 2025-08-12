@@ -8,7 +8,7 @@ public class KthLargestElement {
   PriorityQueue<Integer> queue = new PriorityQueue<>();
 
   public static void main(String[] args) {
-    KthLargestElement kthLargest = new KthLargestElement(3, new int[]{4, 5, 8, 2});
+    KthLargestElement kthLargest = new KthLargestElement(3, new int[] {4, 5, 8, 2});
 
     System.out.println(kthLargest.add(3));
     System.out.println(kthLargest.add(5));
@@ -23,7 +23,6 @@ public class KthLargestElement {
     for (int n : nums) {
       queue.add(n);
     }
-
   }
 
   public int add(int val) {

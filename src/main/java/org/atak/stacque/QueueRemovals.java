@@ -47,8 +47,9 @@ public class QueueRemovals {
 
       for (Position position : popped) {
         if (position.index != maxIndex) {
-          Position next = new Position(position.index,
-              (position.value == 0) ? position.value : position.value - 1);
+          Position next =
+              new Position(
+                  position.index, (position.value == 0) ? position.value : position.value - 1);
           positions.add(next);
         }
       }
@@ -69,10 +70,7 @@ public class QueueRemovals {
 
     @Override
     public String toString() {
-      return "Position{" +
-          "index=" + index +
-          ", value=" + value +
-          '}';
+      return "Position{" + "index=" + index + ", value=" + value + '}';
     }
   }
 }

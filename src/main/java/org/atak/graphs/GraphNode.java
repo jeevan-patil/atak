@@ -22,9 +22,6 @@ public class GraphNode {
 
   @Override
   public String toString() {
-    return "GraphNode{" +
-        "value=" + value +
-        ", adjacent=" + adjacent +
-        '}';
+    return "GraphNode{" + "value=" + value + ", adjacent=" + adjacent + '}';
   }
 }

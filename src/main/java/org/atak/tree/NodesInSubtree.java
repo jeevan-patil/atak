@@ -82,7 +82,6 @@ public class NodesInSubtree {
     return result;
   }
 
-
   // These are the tests we use to determine if the solution is correct.
   // You can add your own at the bottom, but they are otherwise not editable!
   int test_case_number = 1;
@@ -126,7 +125,7 @@ public class NodesInSubtree {
   public void run() throws IOException {
     Scanner sc = new Scanner(System.in);
 
-    //Testcase 1
+    // Testcase 1
     int n_1 = 3, q_1 = 1;
     String s_1 = "aba";
     Node root_1 = new Node(1);

@@ -7,11 +7,11 @@ public class PathBetweenPoints {
     System.out.println(((int) 'A') + " - " + ((int) 'B'));
 
     int[][] array = {
-        {0, 0, 0, -1, 0},
-        {-1, 0, 0, -1, -1},
-        {0, 0, 0, -1, 0},
-        {-1, 0, -1, 0, -1},
-        {0, 0, -1, 0, 0}
+      {0, 0, 0, -1, 0},
+      {-1, 0, 0, -1, -1},
+      {0, 0, 0, -1, 0},
+      {-1, 0, -1, 0, -1},
+      {0, 0, -1, 0, 0}
     };
 
     PathBetweenPoints p = new PathBetweenPoints();

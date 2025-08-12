@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 public class VisibleNodes {
 
-
   int visibleNodes(Node root) {
     if (root == null) {
       return 0;

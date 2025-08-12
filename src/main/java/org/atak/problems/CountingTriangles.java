@@ -11,7 +11,7 @@ public class CountingTriangles {
     Set<String> data = new HashSet<>();
 
     for (Sides side : arr) {
-      int[] sides = new int[]{side.a, side.b, side.c};
+      int[] sides = new int[] {side.a, side.b, side.c};
       Arrays.sort(sides);
       String key = Arrays.toString(sides);
       data.add(key);
@@ -56,5 +56,4 @@ public class CountingTriangles {
   public static void main(String[] args) {
     new CountingTriangles().run();
   }
-
 }

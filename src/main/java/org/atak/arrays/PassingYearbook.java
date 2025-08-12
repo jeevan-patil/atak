@@ -6,7 +6,7 @@ import java.util.Set;
 public class PassingYearbook {
 
   public static void main(String[] args) {
-    int[] arr = {4,3,2,5,1};
+    int[] arr = {4, 3, 2, 5, 1};
     PassingYearbook p = new PassingYearbook();
 
     for (int a : p.findSignatureCounts(arr)) {

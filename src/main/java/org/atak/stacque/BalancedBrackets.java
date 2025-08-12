@@ -28,7 +28,6 @@ public class BalancedBrackets {
     return stack.isEmpty();
   }
 
-
   public boolean isOpenBracket(char c) {
     for (char[] arr : braces) {
       if (arr[0] == c) {
@@ -48,5 +47,4 @@ public class BalancedBrackets {
 
     return false;
   }
-
 }

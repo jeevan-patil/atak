@@ -1,8 +1,6 @@
 package org.atak.problems;
 
-/**
- * Given sequence on integers and asked to find the second lowest integer.
- */
+/** Given sequence on integers and asked to find the second lowest integer. */
 public class SecondSmallestNumber {
 
   public static void main(String[] args) {

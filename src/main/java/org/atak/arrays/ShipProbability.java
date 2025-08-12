@@ -6,8 +6,8 @@ public class ShipProbability {
 
   public static void main(String[] args) {
     int[][] ships = {
-        {0, 0, 1},
-        {1, 0, 1}
+      {0, 0, 1},
+      {1, 0, 1}
     };
     ShipProbability shipProbability = new ShipProbability();
     System.out.println(shipProbability.getHitProbability(ships));
@@ -31,7 +31,9 @@ public class ShipProbability {
     }
 
     return Double.parseDouble(
-        new BigDecimal(ships).divide(new BigDecimal(columns).multiply(new BigDecimal(rows))).setScale(6)
+        new BigDecimal(ships)
+            .divide(new BigDecimal(columns).multiply(new BigDecimal(rows)))
+            .setScale(6)
             .toString());
   }
 }

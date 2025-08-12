@@ -37,7 +37,7 @@ public class ContiguousSubarrays {
     return ans;
   }
 
-  //3, 4, 1, 6, 2
+  // 3, 4, 1, 6, 2
   int[] countSubarrays(int[] arr) {
     Stack<Integer> stack = new Stack<>();
     int[] ans = new int[arr.length];

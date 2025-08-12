@@ -8,14 +8,14 @@ import java.util.Set;
  * Initially, only person 1 knows the story. Given a list of meetings between people in a form of
  * (person_1_id, person_2_id, timestamp) construct a list of the persons who will know the story at
  * the very end.
- * <p>
- * Example: [(1, 2, 100), (3,4, 200), (1,3, 300), (2,5, 400)], 1 // The events could be out of
+ *
+ * <p>Example: [(1, 2, 100), (3,4, 200), (1,3, 300), (2,5, 400)], 1 // The events could be out of
  * order. Person 2 will learn the story at the moment 100, person 3 — at the moment 300, person 5 —
  * in the moment 400. Person 4 will never learn the story. So the answer is [1, 2, 3, 5].
- * <p>
- * Eg2: [(1, 2, 100), (2, 3, 100), (4, 5, 100)], 2 where the first parameter is array of the Persons
- * meet at particular timestamp, second parameter is the PersonId who knows the story first. Output:
- * [1, 2, 3]
+ *
+ * <p>Eg2: [(1, 2, 100), (2, 3, 100), (4, 5, 100)], 2 where the first parameter is array of the
+ * Persons meet at particular timestamp, second parameter is the PersonId who knows the story first.
+ * Output: [1, 2, 3]
  */
 public class StoryProblem {
 
@@ -33,8 +33,8 @@ public class StoryProblem {
     System.out.println(new StoryProblem().peopleWhoKnowTheStory(conversations, 2));
   }
 
-  public Set<Integer> peopleWhoKnowTheStory(final Conversation[] conversations,
-      final int personWhoKnew) {
+  public Set<Integer> peopleWhoKnowTheStory(
+      final Conversation[] conversations, final int personWhoKnew) {
     if (conversations.length == 0) {
       return null;
     }
@@ -67,7 +67,4 @@ class Conversation {
     this.person2 = person2;
     this.timestamp = timestamp;
   }
-
-
 }
-

@@ -22,5 +22,4 @@ public class ForeignCurrency {
     }
     return false;
   }
-
 }

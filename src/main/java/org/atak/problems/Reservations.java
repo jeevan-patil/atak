@@ -71,7 +71,6 @@ public class Reservations {
       } else {
         rowSeatTaken.put(no, 1);
       }
-
     }
 
     int families = 0;
@@ -112,5 +111,4 @@ public class Reservations {
 
     return families;
   }
-
 }
